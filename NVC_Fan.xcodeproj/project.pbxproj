@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		516868AD1E0724E2004DB1CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868AC1E0724E2004DB1CD /* AppDelegate.swift */; };
-		516868AF1E0724E2004DB1CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868AE1E0724E2004DB1CD /* ViewController.swift */; };
+		516868AF1E0724E2004DB1CD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868AE1E0724E2004DB1CD /* MainVC.swift */; };
 		516868B21E0724E2004DB1CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516868B01E0724E2004DB1CD /* Main.storyboard */; };
 		516868B51E0724E2004DB1CD /* NVC_Fan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 516868B31E0724E2004DB1CD /* NVC_Fan.xcdatamodeld */; };
 		516868B71E0724E2004DB1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516868B61E0724E2004DB1CD /* Assets.xcassets */; };
 		516868BA1E0724E2004DB1CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516868B81E0724E2004DB1CD /* LaunchScreen.storyboard */; };
+		516868C31E072C87004DB1CD /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868C21E072C87004DB1CD /* VideoVC.swift */; };
+		516868C81E074BF5004DB1CD /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868C71E074BF5004DB1CD /* VideoCell.swift */; };
+		516868CB1E074E8D004DB1CD /* NVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868CA1E074E8D004DB1CD /* NVCModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		516868A91E0724E2004DB1CD /* NVC_Fan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVC_Fan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516868AC1E0724E2004DB1CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		516868AE1E0724E2004DB1CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		516868AE1E0724E2004DB1CD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		516868B11E0724E2004DB1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		516868B41E0724E2004DB1CD /* NVC_Fan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NVC_Fan.xcdatamodel; sourceTree = "<group>"; };
 		516868B61E0724E2004DB1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		516868B91E0724E2004DB1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		516868BB1E0724E2004DB1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516868C21E072C87004DB1CD /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		516868C71E074BF5004DB1CD /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		516868CA1E074E8D004DB1CD /* NVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVCModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,10 @@
 		516868AB1E0724E2004DB1CD /* NVC_Fan */ = {
 			isa = PBXGroup;
 			children = (
+				516868C91E074E03004DB1CD /* Model */,
+				516868C41E074B33004DB1CD /* View */,
+				516868C11E072C4B004DB1CD /* Controller */,
 				516868AC1E0724E2004DB1CD /* AppDelegate.swift */,
-				516868AE1E0724E2004DB1CD /* ViewController.swift */,
 				516868B01E0724E2004DB1CD /* Main.storyboard */,
 				516868B61E0724E2004DB1CD /* Assets.xcassets */,
 				516868B81E0724E2004DB1CD /* LaunchScreen.storyboard */,
@@ -65,6 +73,31 @@
 				516868B31E0724E2004DB1CD /* NVC_Fan.xcdatamodeld */,
 			);
 			path = NVC_Fan;
+			sourceTree = "<group>";
+		};
+		516868C11E072C4B004DB1CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				516868AE1E0724E2004DB1CD /* MainVC.swift */,
+				516868C21E072C87004DB1CD /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		516868C41E074B33004DB1CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				516868C71E074BF5004DB1CD /* VideoCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		516868C91E074E03004DB1CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				516868CA1E074E8D004DB1CD /* NVCModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516868AF1E0724E2004DB1CD /* ViewController.swift in Sources */,
+				516868C81E074BF5004DB1CD /* VideoCell.swift in Sources */,
+				516868C31E072C87004DB1CD /* VideoVC.swift in Sources */,
+				516868AF1E0724E2004DB1CD /* MainVC.swift in Sources */,
+				516868CB1E074E8D004DB1CD /* NVCModel.swift in Sources */,
 				516868AD1E0724E2004DB1CD /* AppDelegate.swift in Sources */,
 				516868B51E0724E2004DB1CD /* NVC_Fan.xcdatamodeld in Sources */,
 			);
