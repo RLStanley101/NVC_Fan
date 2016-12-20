@@ -16,9 +16,11 @@
 		516868C31E072C87004DB1CD /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868C21E072C87004DB1CD /* VideoVC.swift */; };
 		516868C81E074BF5004DB1CD /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868C71E074BF5004DB1CD /* VideoCell.swift */; };
 		516868CB1E074E8D004DB1CD /* NVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868CA1E074E8D004DB1CD /* NVCModel.swift */; };
+		5BB6D050FDCD6DA791B77539 /* Pods_NVC_Fan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C654A43761A37493FE4E7676 /* Pods_NVC_Fan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0520EE5EEAB49D24EC3B6458 /* Pods-NVC_Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVC_Fan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NVC_Fan/Pods-NVC_Fan.debug.xcconfig"; sourceTree = "<group>"; };
 		516868A91E0724E2004DB1CD /* NVC_Fan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVC_Fan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516868AC1E0724E2004DB1CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		516868AE1E0724E2004DB1CD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		516868C21E072C87004DB1CD /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		516868C71E074BF5004DB1CD /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		516868CA1E074E8D004DB1CD /* NVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVCModel.swift; sourceTree = "<group>"; };
+		C654A43761A37493FE4E7676 /* Pods_NVC_Fan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NVC_Fan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EBCCE8F54B095F8BFA0802 /* Pods-NVC_Fan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVC_Fan.release.xcconfig"; path = "Pods/Target Support Files/Pods-NVC_Fan/Pods-NVC_Fan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB6D050FDCD6DA791B77539 /* Pods_NVC_Fan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				516868AB1E0724E2004DB1CD /* NVC_Fan */,
 				516868AA1E0724E2004DB1CD /* Products */,
+				A6C28FABD6BDBF2724F3113C /* Pods */,
+				BBBA255199892FE20AE305FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +107,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		A6C28FABD6BDBF2724F3113C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0520EE5EEAB49D24EC3B6458 /* Pods-NVC_Fan.debug.xcconfig */,
+				D2EBCCE8F54B095F8BFA0802 /* Pods-NVC_Fan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBBA255199892FE20AE305FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C654A43761A37493FE4E7676 /* Pods_NVC_Fan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 516868BE1E0724E2004DB1CD /* Build configuration list for PBXNativeTarget "NVC_Fan" */;
 			buildPhases = (
+				80065130EF42A5DF3A91BE60 /* [CP] Check Pods Manifest.lock */,
 				516868A51E0724E2004DB1CD /* Sources */,
 				516868A61E0724E2004DB1CD /* Frameworks */,
 				516868A71E0724E2004DB1CD /* Resources */,
+				27CADC5885E41BED06C987BB /* [CP] Embed Pods Frameworks */,
+				A59F1E84ECBB02127ED9AEEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,7 +154,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Ronnie Stanley";
 				TargetAttributes = {
 					516868A81E0724E2004DB1CD = {
@@ -166,6 +193,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27CADC5885E41BED06C987BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NVC_Fan/Pods-NVC_Fan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80065130EF42A5DF3A91BE60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A59F1E84ECBB02127ED9AEEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NVC_Fan/Pods-NVC_Fan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		516868A51E0724E2004DB1CD /* Sources */ = {
@@ -221,6 +296,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -271,6 +347,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -298,7 +375,9 @@
 		};
 		516868BF1E0724E2004DB1CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0520EE5EEAB49D24EC3B6458 /* Pods-NVC_Fan.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NVC_Fan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -310,7 +389,9 @@
 		};
 		516868C01E0724E2004DB1CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2EBCCE8F54B095F8BFA0802 /* Pods-NVC_Fan.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NVC_Fan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -339,6 +420,7 @@
 				516868C01E0724E2004DB1CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
