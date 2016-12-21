@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514BE5311E08C6A300067208 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE5301E08C6A300067208 /* VideoModel.swift */; };
 		516868AD1E0724E2004DB1CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868AC1E0724E2004DB1CD /* AppDelegate.swift */; };
 		516868AF1E0724E2004DB1CD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516868AE1E0724E2004DB1CD /* MainVC.swift */; };
 		516868B21E0724E2004DB1CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516868B01E0724E2004DB1CD /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		0520EE5EEAB49D24EC3B6458 /* Pods-NVC_Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVC_Fan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NVC_Fan/Pods-NVC_Fan.debug.xcconfig"; sourceTree = "<group>"; };
+		514BE5301E08C6A300067208 /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		516868A91E0724E2004DB1CD /* NVC_Fan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVC_Fan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516868AC1E0724E2004DB1CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		516868AE1E0724E2004DB1CD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				516868CA1E074E8D004DB1CD /* NVCModel.swift */,
+				514BE5301E08C6A300067208 /* VideoModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				516868C81E074BF5004DB1CD /* VideoCell.swift in Sources */,
 				516868C31E072C87004DB1CD /* VideoVC.swift in Sources */,
 				516868AF1E0724E2004DB1CD /* MainVC.swift in Sources */,
+				514BE5311E08C6A300067208 /* VideoModel.swift in Sources */,
 				516868CB1E074E8D004DB1CD /* NVCModel.swift in Sources */,
 				516868AD1E0724E2004DB1CD /* AppDelegate.swift in Sources */,
 				516868B51E0724E2004DB1CD /* NVC_Fan.xcdatamodeld in Sources */,

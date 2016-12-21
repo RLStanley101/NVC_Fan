@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
-class NVC {
-    private var _imageURL: String!
+ class NVC {
+    /* private var _imageURL: String!
     private var _videoID: String!
     private var _videoTitle: String!
     private var _videoDescription: String!
@@ -33,5 +34,12 @@ class NVC {
         _videoTitle = videoTitle
         _videoDescription = videoDescription
     }
+    */
+    
+    var videoId : String = ""
+    var videoTitle : String = ""
+    var videoDescription : String = ""
+    var imageUrl : String = ""
+    var position: String = ""
 }
 
