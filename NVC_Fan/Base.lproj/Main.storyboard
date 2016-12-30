@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,25 +19,25 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NVCbanner" translatesAutoresizingMaskIntoConstraints="NO" id="aTF-py-atS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="173"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="173" id="bwO-bx-Mk4"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xdd-85-88O">
-                                <rect key="frame" x="0.0" y="173" width="414" height="563"/>
+                                <rect key="frame" x="0.0" y="173" width="375" height="494"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Video Cell" rowHeight="75" id="0At-6y-52j" customClass="VideoCell" customModule="NVC_Fan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0At-6y-52j" id="ohL-Rf-265">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="boB-9o-Hjr">
@@ -48,7 +48,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="ghe-ge-tiz">
-                                                    <rect key="frame" x="98" y="7" width="296" height="60"/>
+                                                    <rect key="frame" x="98" y="7" width="257" height="60"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-540" y="-604.22535211267609"/>
+            <point key="canvasLocation" x="-455" y="-751"/>
         </scene>
         <!--VideoVC-->
         <scene sceneID="R1f-L0-NkH">
@@ -100,20 +100,32 @@
                         <viewControllerLayoutGuide type="bottom" id="5Yu-On-Cyd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RoC-ts-quq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwg-AW-ujy">
-                                <rect key="frame" x="0.0" y="60" width="414" height="230"/>
+                                <rect key="frame" x="0.0" y="65" width="375" height="230"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="315" id="7YO-yM-4pz"/>
                                     <constraint firstAttribute="height" constant="230" id="iOW-qv-fce"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7YO-yM-4pz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="7YO-yM-4pz"/>
+                                        <exclude reference="iOW-qv-fce"/>
+                                    </mask>
+                                </variation>
                             </webView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B51-5g-oFX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Usq-oo-CGT"/>
+                                    <constraint firstAttribute="height" constant="45" id="Usq-oo-CGT"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Nintendo Voice Chat" id="nLn-6M-rlM">
@@ -128,13 +140,54 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="B51-5g-oFX" firstAttribute="top" secondItem="LOX-FK-hjl" secondAttribute="bottom" id="0N9-Me-3Ms"/>
                             <constraint firstAttribute="trailing" secondItem="B51-5g-oFX" secondAttribute="trailing" id="2eM-gy-syQ"/>
                             <constraint firstAttribute="trailing" secondItem="Xwg-AW-ujy" secondAttribute="trailing" id="6Dg-aN-7rb"/>
-                            <constraint firstItem="B51-5g-oFX" firstAttribute="top" secondItem="RoC-ts-quq" secondAttribute="top" id="BBj-lM-osU"/>
+                            <constraint firstItem="B51-5g-oFX" firstAttribute="top" secondItem="LOX-FK-hjl" secondAttribute="bottom" id="7aq-Xs-rtS"/>
+                            <constraint firstItem="B51-5g-oFX" firstAttribute="top" secondItem="RoC-ts-quq" secondAttribute="top" constant="20" id="BBj-lM-osU"/>
                             <constraint firstItem="B51-5g-oFX" firstAttribute="leading" secondItem="RoC-ts-quq" secondAttribute="leading" id="EuL-T3-DHd"/>
+                            <constraint firstItem="B51-5g-oFX" firstAttribute="top" secondItem="RoC-ts-quq" secondAttribute="top" id="QLa-6N-Vq8"/>
                             <constraint firstItem="Xwg-AW-ujy" firstAttribute="leading" secondItem="RoC-ts-quq" secondAttribute="leading" id="bas-8N-Rp0"/>
+                            <constraint firstItem="B51-5g-oFX" firstAttribute="top" secondItem="LOX-FK-hjl" secondAttribute="bottom" constant="-20" id="eRG-oL-1do"/>
+                            <constraint firstItem="B51-5g-oFX" firstAttribute="top" secondItem="LOX-FK-hjl" secondAttribute="bottom" id="jb0-xf-odd"/>
                             <constraint firstItem="Xwg-AW-ujy" firstAttribute="top" secondItem="B51-5g-oFX" secondAttribute="bottom" id="kia-NQ-HlI"/>
+                            <constraint firstItem="5Yu-On-Cyd" firstAttribute="top" secondItem="Xwg-AW-ujy" secondAttribute="bottom" constant="388" id="mun-XM-Tc9">
+                                <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                            </constraint>
+                            <constraint firstItem="B51-5g-oFX" firstAttribute="top" secondItem="RoC-ts-quq" secondAttribute="top" id="pvO-Uc-Zjt"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0N9-Me-3Ms"/>
+                                <exclude reference="7aq-Xs-rtS"/>
+                                <exclude reference="QLa-6N-Vq8"/>
+                                <exclude reference="eRG-oL-1do"/>
+                                <exclude reference="jb0-xf-odd"/>
+                                <exclude reference="pvO-Uc-Zjt"/>
+                                <exclude reference="mun-XM-Tc9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="7aq-Xs-rtS"/>
+                                <exclude reference="BBj-lM-osU"/>
+                                <exclude reference="eRG-oL-1do"/>
+                                <include reference="pvO-Uc-Zjt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="0N9-Me-3Ms"/>
+                                <exclude reference="BBj-lM-osU"/>
+                                <include reference="QLa-6N-Vq8"/>
+                                <exclude reference="jb0-xf-odd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="mun-XM-Tc9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="TitleLabel" destination="nLn-6M-rlM" id="Sek-UN-pHa"/>
@@ -143,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hy-dN-aB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="-604"/>
+            <point key="canvasLocation" x="214.453125" y="-750"/>
         </scene>
     </scenes>
     <resources>

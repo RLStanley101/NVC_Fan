@@ -27,7 +27,7 @@ class VideoModel: NSObject {
     func getFeedVideos() {
         
         // Fetch the videos dynamically through YouTube API
-        Alamofire.request("https://www.googleapis.com/youtube/v3/playlistItems", method: HTTPMethod.get, parameters: ["part": "snippet", "playlistId": playlistId, "key": API_KEY], encoding: URLEncoding.default, headers: nil).responseJSON { (response) -> Void in
+        Alamofire.request("https://www.googleapis.com/youtube/v3/playlistItems", method: HTTPMethod.get, parameters: ["part": "snippet", "playlistId": playlistId, "maxResults":"50", "key": API_KEY], encoding: URLEncoding.default, headers: nil).responseJSON { (response) -> Void in
             
             var arrayOfVideos = [NVC]()
             
